@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/andela/boondocks-bn-backend.svg?branch=develop)](https://travis-ci.org/andela/boondocks-bn-backend)
-[![Coverage Status](https://coveralls.io/repos/github/andela/boondocks-bn-backend/badge.svg)](https://coveralls.io/github/andela/boondocks-bn-backend)
+[![Build Status](https://travis-ci.org/RaymondMwaura/boondocks-bn-backend.svg?branch=develop)](https://travis-ci.org/RaymondMwaura/boondocks-bn-backend)
+[![Coverage Status](https://coveralls.io/repos/github/RaymondMwaura/boondocks-bn-frontend/badge.svg)](https://coveralls.io/github/RaymondMwaura/boondocks-bn-frontend)
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 # Barefoot Nomad - Making company travel and accomodation easy and convinient.
@@ -44,11 +44,10 @@ Make company global travel and accommodation easy and convenient for the strong 
 ## Deployment
 
 This app will be deployed on heroku, To access this app go to these link:
-    - [Production URL](https://boondocks-bn-backend.herokuapp.com/)
-    - [Staging](https://boondocks-bn-backend-staging.herokuapp.com/)
+    - [Production URL](https://my-barefoot-nomad-backend.herokuapp.com/)
 
 ## API DOCUMENTATION
- - [Swagger documentation](https://boondocks-bn-backend-staging.herokuapp.com/api/docs)
+ - [Swagger documentation](https://my-barefoot-nomad-backend.herokuapp.com/api/docs)
 
 ## API Endpoints
 

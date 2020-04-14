@@ -109,3 +109,6 @@ public/images
 public/temp
 public/documents
 public/profile_pictures
+
+# workspace settings
+settings.json
