@@ -9,8 +9,12 @@ export const getTokenAfterSignIn = async (res, user) => {
   const userDetails = user.dataValues;
   const token = await JWTToken.signToken(userDetails);
   const { twoFASecret, twoFAType, twoFADataURL } = userDetails;
-  return res.redirect(
-    `${process.env.FRONTEND_URL}/profile?token=${token}&twoFASecret=${twoFASecret}&twoFAType=${twoFAType}&twoFADataURL=${twoFADataURL}`);
+  let authRoute = '/home';
+  if (twoFAType === 'sms_text' || twoFAType === 'authenticator_app') {
+    authRoute = '/login-2-fa';
+  }
+  const redirectURL = `${process.env.FRONTEND_URL}${authRoute}?token=${token}&twoFASecret=${twoFASecret}&twoFAType=${twoFAType}&twoFADataURL=${twoFADataURL}`;
+  return res.redirect(redirectURL);
 };
 
 /** Auth Class */
